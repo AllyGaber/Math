@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math.GG</title>
+    <link rel="icon" href="../icon.png">
+    <style>
+        @font-face {
+            font-family: EquationFont;
+            src: url(Supercharge-JRgPo.otf);            
+        }
+        @font-face {
+            font-family: MathGG;
+            src: url(Rushfordclean-rgz89.otf);
+        }
+        #navBar {
+            background-color: #131067;
+            height: 100%;
+            width: 500px;
+            flex-shrink: 0;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .links {
+            transition: background-color 100ms ease-in-out;
+            height: 75px;
+            width: 500px;
+            background-color: #18148b;
+            line-height: 75px;
+            color: white;
+            margin-bottom: 5px;
+            box-sizing: border-box;
+            padding-left: 1.5em;
+            font-size: 25px;
+            font-family: EquationFont;
+            padding-top: 4px;
+        }
+        .activeLink {
+            transition: background-color 100ms ease-in-out;
+            height: 75px;
+            width: 500px;
+            background-color: #0062b3;
+            line-height: 75px;
+            color: white;
+            margin-bottom: 5px;
+            box-sizing: border-box;
+            padding-left: 1.5em;
+            font-size: 25px;
+            font-family: EquationFont;
+            padding-top: 4px;
+        }
+        .activeLink:hover {
+             background-color: #015599;
+        }
+        #list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            margin-top: 63px;
+        }
+        #list a {
+            color: white;
+            text-decoration: none;
+        }
+        .links:hover {
+             background-color: #16127d;
+        }
+        #logo {
+            content: url("../logo.png");
+            width: 250px;
+            position: absolute;
+            z-index: 10;
+            margin: 10px;
+        }
+        #frame {
+            border-width: 3;
+            border-radius: 10px;
+            border-color: #050430;
+            border-style: solid;
+            position: relative;
+            margin: auto;
+            flex-shrink: 0;
+        }
+        #container {
+            display: flex;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body style="background-color: #070540;">
+    <div id="container">
+    <div id="navBar">
+        <a href="index.html"><div id="logo"></div></a>
+        <ul id="list">
+            <a href="index.html"><li class="activeLink">Practice</li></a>
+            <a href=""><li class="links">Reload</li></a>
+        </ul>
+    </div>
+    <iframe id="frame" src="frame.html" width="720px" height="405px" scrolling="off"></iframe>
+    </div>
+</body>
+</html>
